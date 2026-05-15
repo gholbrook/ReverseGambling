@@ -18,7 +18,7 @@ urls = [
 ]
 
 claim_steps = {
-    'https://crowncoinscaino.com/': {
+    'https://crowncoinscasino.com/': {
         'login': [
             # click (x, y)
             # wait some time
