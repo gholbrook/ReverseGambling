@@ -168,16 +168,12 @@ def log_in():
     pass
 
 for url in urls:
-    time.sleep(2)
+    time.sleep(5)
     navigate_to_url(url)
-
-    if logged_in:
-        continue
-    else:
-        log_in()
 
     # claim daily rewards
     for step in claim_steps[url]['claim']:
+        print(step)
         print(step[0], step[1])
         if step[0] == -1 and step[1] == -1:
             pag.scroll(-3)
